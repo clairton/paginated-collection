@@ -1,12 +1,15 @@
-# repository[![Build Status](https://drone.io/github.com/clairton/repository/status.png)](https://drone.io/github.com/clairton/repository/latest)
+# paginated-collection[![Build Status](https://drone.io/github.com/clairton/paginated-collection/status.png)](https://drone.io/github.com/clairton/paginated-collection/latest)
 
 Paginated Collection.
 
 Para Recuperar uma Coleção paginada:
 ```java
-PaginatedMetaList<Aplicacao> metaList = repository.from(Aplicacao.class).collection(1, 1);
+PaginatedMetaList<Aplicacao> metaList = new PaginatedMetaList<>(Arrays.asList(new Aplicacao()), new Meta(1l,2l));
 metaList.getMeta().getTotal();//total de itens em todosd as paginas
 metaList.getMeta().getPage();//pagina atual
+for(Aplicacao a : metaList){
+	a....
+}
 ```
 
 Para usar será necessário adicionar os repositórios maven:
