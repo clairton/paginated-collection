@@ -19,7 +19,7 @@ public class PaginatedMetaList<T> extends ArrayList<T> implements PaginatedList<
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public <W> W unwrap(Class<W> type) {
+	public <W> W unwrap(final Class<W> type) {
 		return (W) meta;
 	}	
 }
