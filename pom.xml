@@ -5,7 +5,7 @@
 	<artifactId>paginated-collection</artifactId>
 	<name>paginated-collection</name>
 	<description>Paginated Collection</description>
-	<version>0.1.0</version>
+	<version>1.0.0</version>
 	<url>https://github.com/clairton/paginated-collection</url>
 	<scm>
 		<connection>scm:git:git@github.com:clairton/paginated-collection.git</connection>
